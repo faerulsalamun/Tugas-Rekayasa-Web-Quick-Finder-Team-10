@@ -1,0 +1,549 @@
+body {
+    font-family: Segoe UI, Helvetica, Arial, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    color: #434343
+}
+
+li {
+    list-style: none;
+    zoom: 1;
+    *display: inline
+}
+
+ul,
+ol,
+dl {
+    padding: 0;
+    margin: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    color: #434343;
+    margin-bottom: 0;
+    font-weight: 400
+}
+
+p {
+    margin-top: 0;
+    color: #434343
+}
+
+a img {
+    border: 0
+}
+
+a:link {
+    color: #434343;
+    text-decoration: underline
+}
+
+a:visited {
+    color: #222;
+    text-decoration: underline
+}
+
+a:hover,
+a:focus {
+    color: #006fa1;
+    text-decoration: none
+}
+
+a:active {
+    color: #006fa1;
+    text-decoration: none
+}
+
+table th {
+    font-size: 15px;
+    font-weight: normal;
+    padding: 0
+}
+
+input,
+textarea,
+input.ui-state-default,
+textarea.ui-state-default {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='tel'],
+input.ui-state-default[type='text'],
+input.ui-state-default[type='email'],
+input.ui-state-default[type='password'] {
+    width: 240px;
+    height: 24px;
+    line-height: 24px;
+    color: #333;
+    font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+    border: 1px solid #bababa;
+    padding: 5px 6px 5px 9px;
+    vertical-align: middle;
+    background-color: #fff
+}
+
+input[type='text']:focus,
+input[type='text']:hover,
+input[type='tel']:focus,
+input[type='tel']:hover,
+input[type='email']:focus,
+input[type='email']:hover,
+input[type='password']:focus,
+input[type='password']:hover {
+    border-color: #5c5c5c
+}
+
+.accountModal .tv-control-group {
+    margin-left: 28px;
+    margin-top: 3px;
+    width: auto;
+    text-align: left;
+    color: #444
+}
+
+input[type='checkbox'] {
+    background-color: #fff;
+    opacity: 0;
+    position: absolute;
+    padding: 4px;
+    margin: 4px 0 0 4px
+}
+
+input[type='checkbox']+label {
+    cursor: pointer;
+    color: #434343;
+    padding-left: 30px\9
+}
+
+input[type="checkbox"]+label .general-checkbox {
+    background: url("/hashed/assets/stylesheets/images/sprite/traveloka-main-db6f25b4662a9a6ec63ff7b19d1f6b24.png") -315px -175px no-repeat;
+    height: 18px;
+    width: 17px;
+    margin: 5px;
+    float: left;
+    display: none\9
+}
+
+input[type="checkbox"]:checked+label .general-checkbox {
+    background: url("/hashed/assets/stylesheets/images/sprite/traveloka-main-db6f25b4662a9a6ec63ff7b19d1f6b24.png") -315px -150px no-repeat;
+    height: 18px;
+    width: 17px
+}
+
+input[type=checkbox][disabled]+label .general-checkbox {
+    background: url("/hashed/assets/stylesheets/images/sprite/traveloka-main-db6f25b4662a9a6ec63ff7b19d1f6b24.png") -314px -250px no-repeat;
+    color: #e8e8e8
+}
+
+span.italic {
+    font-style: italic;
+    font-size: 1em
+}
+
+span.tvBold {
+    font-weight: 700;
+    font-size: 1em
+}
+
+
+#container {
+    min-height: 488px;
+    height: 100%;
+    width: 960px;
+    margin: 0 auto;
+    height: auto !important;
+    padding-bottom: 20px
+}
+
+#container.full-width {
+    width: 100%
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+.clearfix {
+    display: inline-block
+}
+
+
+* html .clearfix {
+    height: 1%
+}
+
+.clearfix {
+    display: block
+}
+
+
+#promoQuickFinder {
+    width: 590px;
+    /*float: right;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px
+}
+
+#rangeSearch {
+    width: 590px;
+    float: right;
+    padding: 0;
+    font-size: 14px;
+    margin-top: 10px
+}
+
+#rangeSearch h2 {
+    padding: 0;
+    margin-bottom: 10px
+}
+
+#rangeSearch p {
+    padding: 0;
+    margin: 0
+}
+
+#rangeSearch label {
+    padding: 0;
+    font-size: 14px;
+    color: white;
+}
+
+#rangeSearch .rangeSearchBox {
+    background: #029FE4;
+    margin: 15px 0 15px 0;
+    padding: 10px
+}
+
+#rangeSearch .rangeSearchBox input,
+#rangeSearch .rangeSearchBox .dropdown {
+    margin-top: 5px
+}
+
+#rangeSearch .rangeSearchSource,
+#rangeSearch .rangeSearchDestination {
+    float: left;
+    width: 203px
+}
+
+#rangeSearch .rangeSearchMonth {
+    float: left;
+    width: 160px
+}
+
+#rangeSearch input#from-city,
+#rangeSearch input#destination-city {
+    width: 180px
+}
+
+#rangeSearch .rangeSearchDateBox {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    *margin-left: -40px
+}
+
+#rangeSearch .rangeSearchAvailable .rangeSearchDateBox {
+    cursor: pointer
+}
+
+#rangeSearch .rangeSearchAvailable.selected .rangeSearchDateBox {
+    padding: 7px;
+    background: #fff;
+    margin: -7px;
+    border: 2px solid #1ba0e2;
+    color: #222;
+    *margin-left: -47px
+}
+
+#rangeSearch .rangeSearchAvailable.selected .rangeSearchDate {
+    font-weight: bold
+}
+
+#rangeSearch .rangeSearchAvailable a.rangeSearchBook {
+    background-position: -531px -9px;
+    width: 63px;
+    height: 25px;
+    display: none;
+    margin-left: 10px;
+    margin-top: 2px
+}
+
+#rangeSearch .rangeSearchAvailable.selected a.rangeSearchBook {
+    display: block
+}
+
+#rangeSearch .rangeSearchAvailable.selected .rangeSearchDate {
+    margin-top: 0
+}
+
+#rangeSearch .rangeSearchAvailable.selected .rangeSearchPrice {
+    font-size: 18px;
+    line-height: 20px
+}
+
+#rangeSearch table {
+    color: #434343
+}
+
+#rangeSearch table.rangeSearchDayName,
+#rangeSearch table.rangeSearchDates {
+    width: 590px
+}
+
+#rangeSearch table.rangeSearchDayName thead td,
+#rangeSearch table.rangeSearchDates tr td {
+    width: 80px;
+    text-align: center
+}
+
+#rangeSearch table.rangeSearchDayName thead td {
+    font-size: 16px;
+    height: 30px
+}
+
+#rangeSearch table.rangeSearchDates tr td {
+    height: 80px;
+    color: #434343;
+    vertical-align: top
+}
+
+#rangeSearch table.rangeSearchDates tr td.currentMonth {
+    background: #f0f0f0;
+    color: #434343;
+    font-weight: bold
+}
+
+#rangeSearch table.rangeSearchDates tr td .rangeSearchPrice {
+    font-weight: normal;
+    color: #222
+}
+
+#rangeSearch table.rangeSearchDates tr td.pastMonth {
+    background: #fff;
+    color: #b6b6b6
+}
+
+#rangeSearch table.rangeSearchDates tr td.pastMonth .rangeSearchPrice,
+#rangeSearch table.rangeSearchDates tr td.pastMonth .rangeSearchHoliday {
+    color: #b6b6b6
+}
+
+#rangeSearch .rangeSearchHoliday {
+    color: #d60944
+}
+
+#rangeSearch .rangeSearchDate {
+    font-size: 20px;
+    margin-top: 21px
+}
+
+#rangeSearch .rangeSearchPrice {
+    font-size: 16px;
+    color: #777
+}
+
+#rangeSearch .rangeSearchPrice span {
+    font-size: 10px
+}
+
+select.rsMonthOptions {
+    background: white;
+    height: 36px;
+    border: 1px solid #bababa;
+    width: 150px;
+    padding-left: 10px
+}
+
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+.clearfix {
+    display: inline-block
+}
+
+
+
+.dropdown .selected::after,
+.dropdown.scrollable div::after {
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none
+}
+
+.dropdown {
+    position: relative;
+    width: 160px;
+    border: 1px solid #bababa;
+    cursor: pointer;
+    background: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif
+}
+
+.dropdown.open {
+    z-index: 2
+}
+
+.dropdown .button {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin-top: -4px;
+    border: 6px solid transparent;
+    border-top: 8px solid #434343
+}
+
+.dropdown.open .button {
+    margin-top: -10px;
+    border-top: 6px solid transparent;
+    border-bottom: 8px solid #000
+}
+
+.dropdown.disabled .button {
+    border-top-color: #999
+}
+
+.dropdown .old {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden
+}
+
+.dropdown select {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.dropdown.touch .old {
+    width: 100%;
+    height: 100%
+}
+
+.dropdown.touch select {
+    width: 100%;
+    height: 100%;
+    opacity: 0
+}
+
+.dropdown .selected,
+.dropdown li {
+    display: block;
+    line-height: 1;
+    padding: 10px 12px;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.dropdown.disabled .selected {
+    color: #999
+}
+
+.dropdown .selected::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 60px
+}
+
+.dropdown div {
+    position: absolute;
+    height: 0;
+    left: -1px;
+    right: -1px;
+    top: 100%;
+    margin-top: -1px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: 1px solid #eee;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    opacity: 0
+}
+
+.dropdown.open div {
+    opacity: 1;
+    z-index: 2
+}
+
+.dropdown.scrollable div::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    box-shadow: inset 0 -50px 30px -35px #fff
+}
+
+.dropdown.scrollable.bottom div::after {
+    opacity: 0
+}
+
+.dropdown ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    overflow: hidden
+}
+
+.dropdown.scrollable.open ul {
+    overflow-y: auto
+}
+
+.dropdown li {
+    list-style: none;
+    padding: 8px 12px
+}
+
+.dropdown li.focus {
+    background: #1ba0e2;
+    position: relative;
+    z-index: 3;
+    color: #fff
+}
+
+.dropdown li.active {
+    font-weight: 700
+}

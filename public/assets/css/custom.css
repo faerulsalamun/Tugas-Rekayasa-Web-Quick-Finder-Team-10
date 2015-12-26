@@ -1,0 +1,62 @@
+.container {
+    width: auto;
+    margin-top: 20px;
+    max-width: 680px;
+    padding: 0 15px;
+}
+
+.range-search {
+    padding: 10px 0 10px 0;
+    background-color: #029FE4;
+}
+
+.range-search label {
+    color: white;
+}
+
+/* Table Quick Finder */
+
+.container table.rangeSearchDayName thead td,
+.container table.rangeSearchDates tr td {
+    width: 80px;
+    text-align: center
+}
+
+.container table.rangeSearchDayName thead td {
+    font-size: 16px;
+    height: 30px
+}
+
+.container table.rangeSearchDates tr td {
+    height: 80px;
+    color: #434343;
+    vertical-align: top
+}
+
+.container table.rangeSearchDates tr td.currentMonth {
+    background: #f0f0f0;
+    color: #434343;
+    font-weight: bold
+}
+
+.container table.rangeSearchDates tr td .rangeSearchPrice {
+    font-weight: normal;
+    color: #222
+}
+
+.container table.rangeSearchDates tr td.pastMonth {
+    background: #fff;
+    color: #b6b6b6
+}
+
+.container table.rangeSearchDates tr td.pastMonth .rangeSearchPrice,
+.container table.rangeSearchDates tr td.pastMonth .rangeSearchHoliday {
+    color: #b6b6b6
+}
+
+/* Search Animation */
+.center-block {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
