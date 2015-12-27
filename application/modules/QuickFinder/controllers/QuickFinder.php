@@ -125,6 +125,7 @@ class QuickFinder extends CI_Controller
         $data['where'][0] = "search.date = '$date' ";
         $data['where'][1] = "search.id_from = '$idFrom' ";
         $data['where'][2] = "search.id_to = '$idTo' ";
+        $data['where'][3] = "search.search_date >= DATE_ADD(NOW(), INTERVAL -2 DAY)  ";
 
         $data['order'] = "price asc";
         $data['limit'] = "1";
